@@ -1,7 +1,7 @@
 
 %Figure. 4.
 
-load('E:\进展\文章相关\EEP_HCT\nc_reviewer\final\code\Scrt_overlap.mat');
+load('Scrt_overlap.mat');
 
 [imf_2, residual_2] = emd(S_crt,'SiftRelativeTolerance',0,'SiftMaxIterations',2);
 [imf_3, residual_3] = emd(S_crt,'SiftRelativeTolerance',0,'SiftMaxIterations',3);
@@ -82,9 +82,9 @@ colormap(colortable_2)
 caxis([0 2]) 
 axis equal
 xlim([130 290]);ylim([-30 30]);
-B_lon=['     ';'150°E';'180° ';'150°W';'120°W';' 90°W';'     '];
+B_lon=['     ';'150掳E';'180掳 ';'150掳W';'120掳W';' 90掳W';'     '];
 set(gca,'Xtick',[130,150:30:270,290],'xticklabel',B_lon,'fontsize',11,'fontweight','bold');
-D=['    ';'20°S';' 0° ';'20°N';'    '];
+D=['    ';'20掳S';' 0掳 ';'20掳N';'    '];
 set(gca,'Ytick',[-30,-20,0,20,30],'Yticklabel',D,'fontsize',11,'fontweight','bold');
 set(gca,'layer','top', 'Box', 'off','linewidth', 1.2,'TickDir', 'out', 'TickLength', [.01 .01])
 grid off
