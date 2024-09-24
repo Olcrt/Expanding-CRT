@@ -1,6 +1,6 @@
 
 %Figure. 6.
-load('E:\进展\文章相关\EEP_HCT\nc_reviewer\final\code\wind_stress.mat');
+load('wind_stress.mat');
 ruo_w = 1023;
 omiga = 7.29e-5;
 distance = 1e7;
