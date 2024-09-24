@@ -1,6 +1,6 @@
 
 %Figure. 5.
-load('E:\进展\文章相关\EEP_HCT\nc_reviewer\final\code\wind_current.mat');
+load('wind_current.mat');
 
 [imf_2, residual_2] = emd(wind_m,'SiftRelativeTolerance',0,'SiftMaxIterations',2);
 [imf_3, residual_3] = emd(wind_m,'SiftRelativeTolerance',0,'SiftMaxIterations',3);
